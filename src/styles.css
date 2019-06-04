@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+body{
+  background-color:#3498DB;
+  text-align: center;
+}
+.add{
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color:#A569BD ;
+}
+.container{
+  align-self: right;
+
+}
+.card{
+
+}
