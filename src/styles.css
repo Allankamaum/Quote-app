@@ -15,6 +15,11 @@ body{
   align-self: right;
 
 }
-.card{
-
+#bay{
+border-radius: 8px;
+padding: 5px;
+}
+#talk{
+  border-radius: 8px;
+  border:none;
 }
