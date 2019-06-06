@@ -17,7 +17,7 @@
   <p>
       <li *ngFor="let quote of quotes; let i = index">
           <strong>{{quote.name}}</strong>.{{quote.publisher}}.<strong>"{{quote.quote}}".</strong> {{quote.date |date}}
-          <app-quote-details [quote]='quote'  ></app-quote-details>
+          <app-quote-details [quote]='quote' (isComplete)='delete($event,i)' ></app-quote-details>
 
         </li>
 

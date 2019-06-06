@@ -13,13 +13,9 @@ export class QuotesComponent implements OnInit {
   quotes = [
     new Quote("Allan kamau", "Maya Angelou", "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel", new Date()),
   ]
-  deleteQuote(isComplete, index) {
+  delete(isComplete, index) {
     if (isComplete) {
-      let toDelete = confirm(`Continue with deletion ${this.quotes[index].name}`)
-
-      if (toDelete) {
-        this.quotes.splice(index, 1)
-      }
+      let toDelete = confirm(`Continue with deletion`); this.quotes.splice(index, 1);
     }
   }
 
